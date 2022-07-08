@@ -33,6 +33,11 @@
           setTimeout(time, 1000);
           var dangqian = now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate() ;
           t_div.innerHTML="已相识："+ DateDiff("2022-07-05",dangqian) +" 天";
+
+          sDate2 = sDate2.replace(/-/g,"/");
+        sDate1 = sDate1.replace(/-/g,"/");
+        sDate2 = new Date(sDate2).getTime();
+        sDate1 = new Date(sDate1).getTime();
         }
         /* 计算运行天数的封装函数 */
         function  DateDiff(sDate1,  sDate2){    //sDate1和sDate2是2002-12-18格式  
@@ -44,6 +49,7 @@
           iDays  =  parseInt(Math.abs(oDate1  -  oDate2)  /  1000  /  60  /  60  /24)    //把相差的毫秒数转换为天数  
           return  iDays  
         }
+
         </script>
 </body>
 </html>
