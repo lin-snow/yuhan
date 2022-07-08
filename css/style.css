@@ -1,0 +1,52 @@
+.background {
+    width: 100%;
+    height: 700px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    padding-top: 4%;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px;
+    margin-right: 12%;
+}
+
+.name {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#showtime {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #ce1515d9;
+}
+
+.words {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.two {
+    width: 25%;
+    margin: 28px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph {
+    width: 97%;
+    margin: 50px auto;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

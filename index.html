@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Best Friend-林语涵</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body onload="time()">
+    <div class="background">
+      <div class="two">
+        <img src="img/linyuhan.jpg" alt="" class="avatar">
+        <img src="https://blog.linsnow.cn/img/avatar.png" alt="" class="avatar">
+      </div>
+      <div class="paragraph">
+        <p class="name">My Best Friend-林语涵</p>
+        <p id="showtime"></p>
+        <p class="words">深深的话我们浅浅的说，</p>
+        <p class="words">长长的路我们慢慢的走。</p>
+        <p class="words">祝愿你永远快乐开心.💕</p>
+      </div>
+    </div>
+
+
+    <script>
+        /* 时间 */
+        function time() {
+          t_div = document.getElementById('showtime');
+          var now = new Date()
+          setTimeout(time, 1000);
+          var dangqian = now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate() ;
+          t_div.innerHTML="已相识："+ DateDiff("2022-07-05",dangqian) +" 天";
+        }
+        /* 计算运行天数的封装函数 */
+        function  DateDiff(sDate1,  sDate2){    //sDate1和sDate2是2002-12-18格式  
+          var  aDate,  oDate1,  oDate2,  iDays  
+          aDate  =  sDate1.split("-")  
+          oDate1  =  new  Date(aDate[1]  +  '-'  +  aDate[2]  +  '-'  +  aDate[0])    //转换为12-18-2002格式  
+          aDate  =  sDate2.split("-")  
+          oDate2  =  new  Date(aDate[1]  +  '-'  +  aDate[2]  +  '-'  +  aDate[0])  
+          iDays  =  parseInt(Math.abs(oDate1  -  oDate2)  /  1000  /  60  /  60  /24)    //把相差的毫秒数转换为天数  
+          return  iDays  
+        }
+        </script>
+</body>
+</html>
